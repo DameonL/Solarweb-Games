@@ -1,0 +1,12 @@
+@font-face {
+  font-family: komika;
+  src: url("fonts/KOMIKAX_.ttf");
+}
+
+body {
+  background-color: rgb(250, 250, 235);
+  color: rgb(21, 36, 46);
+  font-size: 2em;
+  margin: unset;
+}
+

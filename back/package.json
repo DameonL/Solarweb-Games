@@ -1,0 +1,31 @@
+{
+  "name": "solarweb-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && copy-files-from-to && cd ../deploy && npm install",
+    "watch": "nodemon "
+  },
+  "copyFiles": [
+    {
+      "from": "./package.json",
+      "to": "../deploy/package.json"
+    }
+  ],
+  "copyFilesSettings": {
+    "whenFileExists": "overwrite",
+    "ignoreDotFilesAndFolders": true
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-functions": "^4.1.1",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {
+    "copy-files-from-to": "^3.6.0",
+    "nodemon": "^2.0.20"
+  }
+}

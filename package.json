@@ -1,0 +1,20 @@
+{
+  "name": "solarweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "back",
+    "front"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=front",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
