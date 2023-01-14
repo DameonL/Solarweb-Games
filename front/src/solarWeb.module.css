@@ -1,10 +1,12 @@
 .about {
-  width: fit-content;
+  width: 80vw;
   margin: auto;
+  background-color: rgb(250, 250, 235);
+  height: 78vh;
+  padding: 1vh 1em 1vh 1em;
 }
 
 .pageTitle {
-  padding-bottom: 0.5em;
   text-transform: uppercase;
   font-family: "komika", "Times New Roman", Times, serif;
   font-size: 3vw;
@@ -17,6 +19,7 @@
     #444400 -0.2em -0.2em;
   font-weight: bold;
   user-select: none;
+  height: 20vh;
 }
 
 .pageTitle :first-child {
