@@ -1,4 +1,4 @@
-import solarWebStyles from "./solarWeb.module.css";
+import solarWebStyles, { aboutGame, aboutGameLabel, backgroundImage, beyondBlueSkiesBackground, issueNumber } from "./solarWeb.module.css";
 
 export default function SolarWeb() {
   return (
@@ -6,11 +6,25 @@ export default function SolarWeb() {
       <div class={solarWebStyles.pageTitle}>
         <div>SolarWeb</div>
         <div>Games</div>
-        <div class={solarWebStyles.price}>10₵</div>
+        <div class={solarWebStyles.price}>
+          <div>10₵</div>
+        </div>
+        <div class={issueNumber}>
+          <div>No. {Math.round(Math.random() * 300 + 100)}</div>
+          <div>
+            {new Date(Math.round(Math.random() * 50 + 1900)).toLocaleDateString("en-US", {
+              month: "short",
+              year: "numeric",
+            })}
+          </div>
+        </div>
       </div>
       <div class={solarWebStyles.about}>
-        SolarWeb Games is a small game development studio in Seattle, WA, with a focus on unique games that have a retro feel.
+        <div class={`${aboutGame} ${beyondBlueSkiesBackground}`}>
+          <div class={aboutGameLabel}>Beyond Blue Skies</div>
+        </div>
       </div>
+      <div class={backgroundImage}></div>
     </div>
   );
 }
