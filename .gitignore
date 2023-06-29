@@ -2,3 +2,4 @@ node_modules
 deploy
 .env
 .firebase
+firebase-debug.log
