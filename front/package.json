@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite serve"
@@ -10,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "typescript": "^5.1.6",
     "typescript-plugin-css-modules": "^4.1.1",
     "vite": "^4.0.4"
   },
   "dependencies": {
-    "preact": "^10.11.3",
-    "typescript": "^4.9.4"
+    "preact": "^10.15.1"
   }
 }

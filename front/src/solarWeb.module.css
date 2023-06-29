@@ -3,15 +3,32 @@
   margin: auto;
   background-color: rgb(15, 15, 15, 0.75);
   color: white;
-  height: 78vh;
-  padding: 1vh 1em 1vh 1em;
+  padding: 1em 1em 0 1em;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1em;
+  bottom: 0px;
+  position: absolute;
+  top: 10vw;
+  left: 0px;
+  width: auto;
+  right: 0px;
 }
 
 .aboutGame {
   width: 25%;
+  min-width: 9em;
   aspect-ratio: 1 / 1;
   text-align: center;
   border-radius: 1em;
+  cursor: pointer;
+  transition: all ease-in-out 500ms;
+  scale: 0.9;
+}
+
+.aboutGame:hover {
+  scale: 1;
 }
 
 .aboutGameLabel {
@@ -30,7 +47,7 @@
 }
 
 .issueNumber {
-  font-size: 0.25em;
+  font-size: 1vh;
   position: absolute;
   top: 1em;
   left: 1em;
@@ -81,18 +98,50 @@
 .pageTitle > .price {
   text-shadow: none;
   position: absolute;
-  right: 1em;
-  top: 1em;
-  font-size: 0.5em;
+  right: 1vh;
+  top: 1vh;
+  font-size: 75%;
   font-weight: bold;
   background-color: aliceblue;
   color: black;
   text-align: center;
-  width: 5vw;
-  height: 5vw;
-  border-radius: 2.5em;
+  width: fit-content;
+  height: auto;
+  border-radius: 10vh;
+  aspect-ratio: 1 / 1;
 }
 
 .price > div {
   margin: 0.5em 0 0.5em 0.5em;
+}
+
+.popupWindow {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 1em;
+  padding: 1em;
+  background-color: rgb(0, 0, 0);
+}
+
+.popupWindow > .title {
+  text-align: center;
+}
+
+.popupWindow > .closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0.5em;
+}
+
+.popupWindow > .closeButton::after {
+  font-weight: bold;
+  content: "✖";
+}
+
+.komika {
+  font-family: "komika", "Times New Roman", Times, serif;
 }

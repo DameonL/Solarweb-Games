@@ -5,7 +5,6 @@ export default defineConfig({
   esbuild: {
     jsxFactory: "h",
     jsxFragment: "Fragment",
-    jsxInject: `import { h } from "preact"`,
   },
   build: {
     outDir: "../../deploy/public/",
@@ -13,13 +12,8 @@ export default defineConfig({
     minify: "false",
     rollupOptions: {
       output: {
-        entryFileNames: "index.js",
+        entryFileNames: "index.tsx",
       },
-    },
-  },
-  vite: {
-    define: {
-      global: {},
     },
   },
 });
